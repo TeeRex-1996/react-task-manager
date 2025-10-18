@@ -12,18 +12,15 @@ const change = (e : React.ChangeEvent<HTMLInputElement>) =>{
         ...item,
         [name] : value
     }))
-
 }
 const  handleLogin = async (e : React.FormEvent<HTMLFormElement>) =>{
 e.preventDefault();
 try{
- const response =await axios.get(`http://localhost:5000/user?username=${loginUser.username}&password=${loginUser.password}`)
+ const response =await axios.get(`http://localhost:3000/user?username=${loginUser.username}&password=${loginUser.password}`)
  if(response.data.length>0){
-    console.log(response)
     seterr(false)
    setsuccess(true)
- }
- else{
+ }else{
     setsuccess(false)
     seterr(true)
  }
@@ -32,7 +29,6 @@ catch(e){
   console.log(e)
 }
 }
-
     return(
         <React.Fragment>
             <div className="container">

@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "id": "914c",
+      "name": "Shubham",
+      "lastname": "sdsadasd",
+      "email": "shubhpatil34317@gmail.com",
+      "password": "sdfdsfsd",
+      "gender": "male",
+      "country": "india",
+      "city": "india",
+      "mob": 43243234
+    },
+    {
+      "id": "01f6",
+      "name": "Shubham",
+      "lastname": "sdsadasd",
+      "email": "shubhpatil34317@gmail.com",
+      "password": "sdfdsfsd",
+      "gender": "male",
+      "country": "india",
+      "city": "india",
+      "mob": 43243234
+    },
+    {
+      "id": "898f",
+      "name": "Shubham",
+      "lastname": "sdsadasd",
+      "email": "shubhpatil34317@gmail.com",
+      "password": "sdfdsfsd",
+      "gender": "male",
+      "country": "india",
+      "city": "india",
+      "mob": 43243234
+    },
+    {
+      "id": "b28d",
+      "name": "Shubham",
+      "lastname": "sdsadasd",
+      "email": "shubhpatil34317@gmail.com",
+      "password": "sdfdsfsd",
+      "gender": "male",
+      "country": "india",
+      "city": "india",
+      "mob": 43243234
+    }
+  ]
+}
