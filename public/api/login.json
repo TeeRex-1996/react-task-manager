@@ -2,8 +2,43 @@
   "user": [
     {
       "id": "0dd3",
-      "username": "shubhpatil34317@gmail.com",
-      "password": "sdfdsfsd"
+      "username": "aishwaryatbrc@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "6a32",
+      "username": "aishwaryatbrc02@outlook.com",
+      "password": "1234567"
+    },
+    {
+      "id": "9570",
+      "username": "",
+      "password": ""
     }
-  ]
+  ],
+  "register": [
+    {
+      "id": "de7b",
+      "name": "Aishwarya Thorat",
+      "lastname": "jhdjkdhjkds",
+      "email": "aishwaryatbrc02@outlook.com",
+      "password": "1234567",
+      "gender": "female",
+      "country": "russia",
+      "city": "india",
+      "mob": 7876876876
+    },
+    {
+      "id": "3eeb",
+      "name": "",
+      "lastname": "",
+      "email": "",
+      "password": "",
+      "gender": "",
+      "country": "",
+      "city": "",
+      "mob": null
+    }
+  ],
+  "tasks": []
 }

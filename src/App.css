@@ -13,8 +13,18 @@ align-items: center;
 }
 table{
   border-collapse: 1px solid black;
-
 }
 tr{
   padding: 20px;
+}
+.row {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url('/images/uwp.jpeg');
+  background-repeat: no-repeat;
+ 
+}
+.card{
+  background-image: url('/images/taskadd.jpg');
+  height: 400px;
 }

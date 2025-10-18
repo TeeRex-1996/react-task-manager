@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import '../../App.css'
 import type { register } from "../../interfaces/login/register/register";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Register : React.FC = () =>{
  const [message, setmessage] = useState<string>();
+ const navigate = useNavigate();
  const [user, setuser]  = useState<register>( {name: '',lastname: '', email:'', password:'', gender:'',country:'',city:'', mob:null});
     const change =(e : React.ChangeEvent<HTMLInputElement  | HTMLSelectElement>) =>{
         const {name,type, value} = e.target;
@@ -12,22 +14,21 @@ const Register : React.FC = () =>{
 const addData = async(e : React.FormEvent<HTMLFormElement>) =>{
 e.preventDefault();
 try{
- const res  = await axios.post('http://localhost:3001/user',user)
+ const res  = await axios.post('http://localhost:3000/register',user)
 if(res.data)
 {setmessage('Registered');
- await axios.post(`http://localhost:3002/user` ,{
+ await axios.post(`http://localhost:3000/user` ,{
     username : res.data.email,
     password : res.data.password
- })
+ });
+ navigate('/');    //navigate to login page
 }
 else{setmessage('Not Registered')}
 }catch(err){
     console.log(err);
-    setmessage('Not Registered');
-    
+    setmessage('Not Registered');  
 }
 }
-
     return (
         <React.Fragment>
         <div className="register">
