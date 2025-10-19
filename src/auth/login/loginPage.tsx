@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 const LoginPage : React.FC = () =>{
      const navigate = useNavigate()
     const [loginUser, setloginUser] = useState<Login>({username : '' , password: ''});
-    const [success, setsuccess] = useState<boolean>(false);
-    const [err, seterr] = useState<boolean>(false);
+    const [istrue, setistrue] = useState<boolean>(false);
 const change = (e : React.ChangeEvent<HTMLInputElement>) =>{
     const { name, value} = e.target;
     setloginUser(item=>({
@@ -20,13 +19,9 @@ e.preventDefault();
 try{
  const response = await axios.get<Login[]>(`http://localhost:3000/user?username=${loginUser.username}&password=${loginUser.password}`)
  if(response.data.length>0){
-    seterr(false)
-   setsuccess(true)
   navigate(`/dashboard/${loginUser.username}`);
-
  }else{
-    setsuccess(false)
-    seterr(true)
+    setistrue(true)
  }
 }
 catch(e){
@@ -46,12 +41,7 @@ catch(e){
             </div>
             <div>
             {
-                success && <p>Login Successfull</p>
-            }
-           </div>
-           <div>
-            {
-                err && <p>Login not Successfull</p>
+                istrue ? "Success" : "Error"
             }
            </div>
         </React.Fragment>
