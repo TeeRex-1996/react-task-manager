@@ -33,7 +33,7 @@ else{setmessage('Not Registered')}
         <React.Fragment>
         <div className="register">
             <form onSubmit={addData}>
-         <table>
+         <table className="table">
             <tr>
                 <th>Name : </th>
              <td>   <input type="text" className="form-control" value={user.name} name="name" onChange={change} /></td>

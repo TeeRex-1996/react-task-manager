@@ -9,11 +9,6 @@
       "id": "6a32",
       "username": "aishwaryatbrc02@outlook.com",
       "password": "1234567"
-    },
-    {
-      "id": "9570",
-      "username": "",
-      "password": ""
     }
   ],
   "register": [
@@ -27,18 +22,72 @@
       "country": "russia",
       "city": "india",
       "mob": 7876876876
-    },
-    {
-      "id": "3eeb",
-      "name": "",
-      "lastname": "",
-      "email": "",
-      "password": "",
-      "gender": "",
-      "country": "",
-      "city": "",
-      "mob": null
     }
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "id": "1dd4",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-16",
+      "end": "2025-10-29",
+      "desc": "sqsqq",
+      "status": true
+    },
+    {
+      "id": "46b6",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-16",
+      "end": "2025-10-16",
+      "desc": "sqsqq",
+      "status": true
+    },
+    {
+      "id": "68c2",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-23",
+      "end": "2025-10-31",
+      "desc": "kjhjghj",
+      "status": false
+    },
+    {
+      "id": "4b7a",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-23",
+      "end": "2025-10-31",
+      "desc": "kjhjghj",
+      "status": true
+    },
+    {
+      "id": "1f3a",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-23",
+      "end": "2025-10-31",
+      "desc": "kjhjghj",
+      "status": true
+    },
+    {
+      "id": "22b3",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-20",
+      "end": "2025-10-21",
+      "desc": "kjhjghj",
+      "status": true
+    },
+    {
+      "id": "08a9",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-20",
+      "end": "2025-10-21",
+      "desc": "kjhjghj",
+      "status": false
+    },
+    {
+      "id": "7b26",
+      "name": "Aishwarya Thorat",
+      "start": "2025-10-21",
+      "end": "2025-10-22",
+      "desc": "kjhjghj",
+      "status": false
+    }
+  ]
 }
