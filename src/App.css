@@ -13,19 +13,15 @@ align-items: center;
 }
 .table{
   border-collapse: collapse;
+  background-color: transparent !important;
 }
 .table th, .table td{
   padding: 20px;
   border: 1px solid black;
   text-align: center;
+ background-color: transparent !important;
 }
-.row {
-  margin-left: 10px;
-  margin-right: 10px;
-  background-image: url('/images/uwp.jpeg');
-  background-repeat: no-repeat;
- 
-}
+
 .card{
   background-image: url('/images/taskadd.jpg');
   height: 400px;
@@ -39,6 +35,20 @@ align-items: center;
 body{
    background-image: url('/images/uwp.jpeg');
    background-repeat: no-repeat;
-   
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   width: 100%;
 
+}
+.imagecontainer{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+.imagecontainer img{
+  object-fit: cover;
 }

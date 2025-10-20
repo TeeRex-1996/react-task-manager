@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Register from './auth/login/Register'
 import Dashboard from './components/Dashboard'
 import Addtasks from '../../reat-task-manager/src/components/Addtasks'
+import About from './components/About'
 function App() {
   return (
     <React.Fragment>
@@ -15,6 +16,7 @@ function App() {
       <Route path='/register' element={<Register></Register>}></Route>
       <Route path='dashboard/:username' element={<Dashboard />}></Route>
       <Route path='/addTasks' element={<Addtasks/>}></Route>
+      <Route path='/about' element={<About />} />
     </Routes>
     </React.Fragment>
   )
