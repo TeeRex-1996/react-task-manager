@@ -19,7 +19,10 @@ e.preventDefault();
 try{
  const response = await axios.get<Login[]>(`http://localhost:3000/user?username=${loginUser.username}&password=${loginUser.password}`)
  if(response.data.length>0){
-  navigate(`/dashboard/${loginUser.username}`);
+    setInterval(() => {
+        navigate(`/dashboard`);
+        localStorage.setItem('session', loginUser.username);
+    }, 2000);
  }else{
     setistrue(true)
  }
