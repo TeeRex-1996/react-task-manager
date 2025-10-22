@@ -9,10 +9,11 @@ const  Navbar : React.FC = () =>{
         <div className="collpase navbar-collapse">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <Link to='#' className="nav-link">Home</Link>
+                    <Link to='/dashboard' className="nav-link">Home</Link>
                     </li>
-                <li  className="nav-item"><Link to='register' className="nav-link">Register</Link></li>
-                <li  className="nav-item" ><Link to='/about' className="nav-link" >About</Link></li>
+                <li className="nav-item"><Link to='register' className="nav-link">Register</Link></li>
+                <li className="nav-item"><Link to='tasklist' className="nav-link">Task List</Link></li>
+                <li className="nav-item" ><Link to='about' className="nav-link" >About</Link></li>
             </ul>
         </div>
        </div>
